@@ -22,7 +22,8 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
+    padding-right: 50px;
 }
 
 nav ul li a {
@@ -82,9 +83,4 @@ button:hover {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-.full-scale {
-    max-width: none !important;
-    width: auto;
 }
