@@ -12,11 +12,9 @@ document.getElementById('fetchItem').addEventListener('click', () => {
                 
                 // largeArt vajadzigs lai playercards butu original size
                 if (category === "playercards" && randomItem.largeArt) {
-                    itemContent += `<img class="full-scale" src="${randomItem.largeArt}"/>`;
+                    itemContent += `<img src="${randomItem.largeArt}"/>`;
                 } else if (randomItem.displayIcon) {
                     itemContent += `<img src="${randomItem.displayIcon}"/>`;
-                } else if (randomItem.fullPortrait) {
-                    itemContent += `<img src="${randomItem.fullPortrait}"/>`;
                 }
                 
                 document.getElementById('itemSection').innerHTML = itemContent;
