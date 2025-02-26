@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+.logo {
+    width: 25%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    margin: 50px 0;
+}
+
+.hero select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 1px solid #444;
+    margin: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.hero select:focus {
+    outline: none;
+    border-color: #ff4655;
+}
+
+/* Ensure the select box and button are aligned nicely */
+.hero select,
+.hero button {
+    margin: 10px;
+    display: inline-block;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e04050;
+}
+
+.card-container {
+    margin-top: 30px;
+}
+
+.card-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.full-scale {
+    max-width: none !important;
+    width: auto;
+}

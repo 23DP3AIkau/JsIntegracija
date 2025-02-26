@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Explorer</title>
+    <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="src/images/icon.webp" class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Explore Valorant Content</h1>
+        <p>Select a category and get a random item!</p>
+        <select id="category">
+            <option value="playercards">Player Cards</option>
+            <option value="buddies">Buddies</option>
+            <option value="maps">Maps</option>
+            <option value="agents">Agents</option>
+            <option value="weapons">Weapons</option>
+        </select>
+        <button id="fetchItem">Get Random Item</button>
+    </section>
+    
+    <section id="itemSection" class="card-container">
+        <!-- Item -->
+    </section>
+    
+    <script src="src/js/main.js"></script>
+</body>
+</html>
