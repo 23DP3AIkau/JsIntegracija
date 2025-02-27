@@ -11,28 +11,6 @@ body {
   text-align: center;
 }
 
-.hero {
-  padding: 40px 20px;
-  background-color: #121212;
-}
-
-.hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.hero-text h1 {
-  font-size: 4em;
-  margin: 0;
-}
-
-.hero-image img {
-  width: 150px;
-  height: auto;
-}
-
 
 header {
   display: flex;
