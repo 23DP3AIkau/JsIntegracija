@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorant Explorer</title>
-    <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
-    <link rel="stylesheet" href="src/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valorant Explorer</title>
+  <link rel="icon" type="image/x-icon" href="src/images/favicon.ico" />
+  <link rel="stylesheet" href="src/css/main.css" />
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="index.html"><img src="src/images/icon.webp" class="logo"></a></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h1>Explore Valorant Content</h1>
-        <p>Select a category and get a random item!</p>
-        <select id="category">
-            <option value="playercards">Player Cards</option>
-            <option value="buddies">Buddies</option>
-            <option value="maps">Maps</option>
-            <option value="agents">Agents</option>
-            <option value="weapons">Weapons</option>
-        </select>
-        <button id="fetchItem">Get Random Item</button>
-    </section>
-    
-    <section id="itemSection" class="card-container">
-        <!-- Item -->
-    </section>
-    
-    <script src="src/js/main.js"></script>
+  <header>
+    <div class="logo">
+      <a href="#home"><img src="src/images/icon.webp" alt="Logo" class="logo" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1>Explore Valorant Content</h1>
+    <p>Select a category and get a random item!</p>
+    <select id="category">
+      <option value="playercards">Player Cards</option>
+      <option value="buddies">Buddies</option>
+      <option value="maps">Maps</option>
+      <option value="agents">Agents</option>
+      <option value="weapons">Weapons</option>
+    </select>
+    <button id="fetchItem">Get Random Item</button>
+  </section>
+
+  <section id="itemSection" class="card-container">
+    <!-- Item -->
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Valorant Explorer</h2>
+    <p>
+      Valorant Explorer is your one-stop destination to discover random Valorant content.
+      Whether you're looking for player cards, buddies, maps, agents, or weapons,
+      my website pulls data from the official Valorant API in real-time.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <h2>Gallery</h2>
+    <p>
+      Take a look at some of the most striking in-game artwork and content from Valorant.
+      This gallery features handpicked images that capture the spirit and aesthetics of the game.
+    </p>
+    <div class="gallery-images">
+      <!-- Pictures -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <p>
+      Have questions or suggestions? Reach out to me at
+      <a href="mailto:A231195AI@rvt.lv">A231195AI@rvt.lv</a>.
+    </p>
+  </section>
+
+  <script src="src/js/main.js"></script>
 </body>
 </html>
+
