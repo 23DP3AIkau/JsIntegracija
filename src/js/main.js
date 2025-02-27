@@ -10,7 +10,6 @@ document.getElementById('fetchItem').addEventListener('click', () => {
                 const randomItem = items[Math.floor(Math.random() * items.length)];
                 let itemContent = `<h2>${randomItem.displayName || 'Unknown'}</h2>`;
                 
-                // largeArt vajadzigs lai playercards butu original size
                 if (category === "playercards" && randomItem.largeArt) {
                     itemContent += `<img src="${randomItem.largeArt}"/>`;
                 } else if (randomItem.displayIcon) {
@@ -22,3 +21,13 @@ document.getElementById('fetchItem').addEventListener('click', () => {
         })
         .catch(error => console.error('Error fetching data:', error));
 });
+
+
+document.getElementById('fetchCatFact').addEventListener('click', () => {
+    fetch('https://catfact.ninja/fact')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('catFactOutput').textContent = data.fact;
+      })
+      .catch(error => console.error('Error fetching cat fact:', error));
+  });
