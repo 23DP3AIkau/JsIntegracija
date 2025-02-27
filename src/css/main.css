@@ -59,9 +59,6 @@ nav ul li a:hover {
   background-color: #1f1f1f;
   color: #fff;
   border: 1px solid #444;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 .hero select:focus {
@@ -96,7 +93,8 @@ button:hover {
 
 .about-section,
 .gallery-section,
-.contact-section {
+.contact-section,
+.cat-facts-section {
   padding: 60px 20px;
   background-color: #1f1f1f;
   margin: 20px 0;
@@ -104,7 +102,8 @@ button:hover {
 
 .about-section h2,
 .gallery-section h2,
-.contact-section h2 {
+.contact-section h2,
+.cat-facts-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -126,3 +125,10 @@ button:hover {
   color: #ff4655;
   text-decoration: none;
 }
+
+footer {
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+  }
